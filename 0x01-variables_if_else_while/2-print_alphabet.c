@@ -1,23 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: print all aplhabet letters
- *
+ * main - prints the alphabet in lowercase,
+ * followed by a new line
  * Return: Always 0 (Success)
-*/
-
+ */
 int main(void)
 {
-	char ch = 'a';
+	char ch;
 
-	while (ch <= 'z')
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		putchar(ch);
-		++ch;
 	}
 	putchar('\n');
-
 	return (0);
 }
